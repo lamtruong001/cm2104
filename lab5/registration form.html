@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration form</title>
+  <script>
+    function testResults(form){
+    var username=form.username.value;
+    alert ("You registered: " + username + ", ");
+  }
+  </script>
+</head>
+
+<body>
+  <h1>MoggyBook</h1>
+<!--complete the form-->
+
+  <form>
+    <table border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td>username:</td>
+        <td>
+          <input type="textarea" name="username">
+        </td>
+      </tr>
+
+      <tr>
+        <td>breed:</td>
+        <td>
+          <input type="textarea" name="breed">
+        </td>
+      </tr>
+
+      <tr>
+        <td>email:</td>
+        <td>
+          <input type="textarea" name="email">
+        </td>
+      </tr>
+
+      <tr>
+        <td>homepage:</td>
+        <td>
+          <input type="textarea" name="homepage">
+        </td>
+      </tr>
+
+      <tr>
+        <td>dateofbirth:</td>
+        <td>
+          <input type="textarea" name="dateofbirth">
+        </td>
+      </tr>
+
+      <tr>
+        <td>about:</td>
+        <td>
+          <input type="textarea" name="about">
+        </td>
+      </tr>
+
+    </table>
+
+    <input type="submit" name="submit" value="Submit" onClick="testResults(this.form)" />
+  </form>
+</body>
+
+</html>
