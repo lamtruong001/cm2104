@@ -1,0 +1,70 @@
+body {
+margin:auto;
+width: 90%;
+float: center;
+}
+
+header, section, article, nav, aside, footer, div {
+font-family:sans-serif;
+border: 1px dotted #000;
+margin: 0.1em;
+display: block;
+width: 100%;
+}
+
+.warning {
+font-weight: bold;
+color: LightBlue;
+}
+
+#first-para {
+font-weight: bold;
+}
+
+#PageHeader {
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+}
+
+#SiteTitle {
+padding-left: 25px;
+padding-top: 25px;
+}
+
+ul {
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style-type: none;
+}
+
+li {
+margin-right: 50px;
+}
+
+#MainImage {
+  width: 60%;
+  float: left;
+
+}
+
+#MainImg{
+  width: 100%;
+}
+
+#ImgMiniature {
+width:35%;
+float: right;
+}
+
+.MiniImg {
+width: 32%;
+}
+
+
+.BlogPostContent{
+width: 60%;
+float: left;
+}
