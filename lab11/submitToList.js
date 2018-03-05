@@ -9,7 +9,7 @@ alert("document ready");
   });
 });
 
-function AddItemToList(item) {
+function addItemToList(item) {
   $("#results").append("<li>" +item +"</li>");
 
 }
