@@ -1,6 +1,6 @@
 $(function(){
 //document ready
-alert("document ready");
+//alert("document ready");
 
   $('#searchform').submit(function(){
     var serachterms = $ ("#searchterms").val();
@@ -13,14 +13,21 @@ alert("document ready");
 function getResultsFromOMDB(searchterms) {
   //$("#results").append("<li>" +item +"</li>");
   var url = "http://www.omdbapi.com/?i=tt3896198&apikey=86a5f8a4&s=" + searchterms;
-  $getJSON(url, function(jsondata){
-    printJSON(jsondata);
+  $.getJSON(url, function(jsondata){
+    addResultTitles(jsondata);
 
   });
 }
 
-function printJSON(jsondata) {
-  var normal = JSON.stringify(jsondata);
-  $("resultsbox").append("<p>"+ normal + "</p>");
+function addResultTitles(jsondata) {
+  var htmlstring = "";
+for (car i=0; i<10; i++) {
+  var title = jsondata.Search[i].Title;
+  htmlstring += "<li>"+ title + "</li>";
+  }
+
+  $("results").html(htmlstring);
+
+  }
 
 }
