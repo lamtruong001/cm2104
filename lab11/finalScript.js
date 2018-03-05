@@ -21,7 +21,7 @@ function getResultsFromOMDB(searchterms) {
 
 function addResultTitles(jsondata) {
   var htmlstring = "";
-for (car i=0; i<10; i++) {
+for (var i=0; i<10; i++) {
   var title = jsondata.Search[i].Title;
   htmlstring += "<li>"+ title + "</li>";
   }
