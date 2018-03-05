@@ -13,7 +13,7 @@ alert("document ready");
 function getResultsFromOMDB(searchterms) {
   //$("#results").append("<li>" +item +"</li>");
   var url = "http://www.omdbapi.com/?i=tt3896198&apikey=86a5f8a4&s=" + searchterms;
-  $getJSON(url, function(jsondata){
+  $.getJSON(url, function(jsondata){
     printJSON(jsondata);
 
   });
