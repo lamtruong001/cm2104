@@ -3,7 +3,7 @@ $(function(){
 alert("document ready");
 
   $('#searchform').submit(function(){
-    var serachterms = $("#searchterms").val();
+    var searchterms = $("#searchterms").val();
     getResultsFromOMDB(searchterms);
     //addItemToList(searchterms);
     return false;
